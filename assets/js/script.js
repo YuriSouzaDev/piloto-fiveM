@@ -1,10 +1,9 @@
 const skinContainer = document.querySelector(".skin-container");
 
 function createElementSkin() {
-  for (let i = 0; i <= 10; i++) {
-    const article = document.createElement("article");
+  const article = document.createElement("article");
 
-    article.innerHTML = `<article class="skin-box">
+  article.innerHTML = `<article class="skin-box">
     <div class="skin-image">
         <div class="title-skin">
             <p>Skin name</p>
@@ -24,7 +23,9 @@ function createElementSkin() {
     <button class="wear-skin">Wear Skin</button>
 </article>`;
 
-    skinContainer.appendChild(article);
-  }
+  skinContainer.appendChild(article);
 }
-createElementSkin();
+
+for (let i = 0; i <= 10; i++) {
+  createElementSkin();
+}
