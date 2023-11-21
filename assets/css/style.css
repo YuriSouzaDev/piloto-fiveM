@@ -241,7 +241,7 @@ body {
   position: relative;
 }
 
-.title-skin p::before {
+.title-skin .active::before {
   content: "On your body";
   color: #aeff47;
   text-shadow: 0px 0px 11px #aeff47;
